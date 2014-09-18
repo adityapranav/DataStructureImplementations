@@ -16,7 +16,7 @@ public interface List<T> {
 
 	boolean remove(T element);
 
-	boolean remove(int index);
+	//boolean remove(int index);
 
 	void sort();
 
