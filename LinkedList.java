@@ -98,10 +98,23 @@ public class LinkedList<T> implements List<T>{
 		// TODO Auto-generated method stub
 		
 	}
-
+        
+        @Override
 	public T get(int index) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+        
+        @Override
+	public void display() {
+		// TODO Auto-generated method stub
+		ListNode<T> current = header.next;
+		while ( current != null )
+		{
+			System.out.print(current.data+"  ");
+			current = current.next;
+		}
+		System.out.println("\n");
+	}
+	
 }
