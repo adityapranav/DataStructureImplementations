@@ -21,4 +21,6 @@ public interface List<T> {
 	void sort();
 
 	T get(int index);
+	
+	void display();
 }
