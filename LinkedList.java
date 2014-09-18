@@ -67,14 +67,29 @@ public class LinkedList<T> implements List<T>{
 
 	@Override
 	public boolean remove(T element) {
-		// TODO Auto-generated method stub
 		
-		return false;
-	}
-
-	@Override
-	public boolean remove(int index) {
 		// TODO Auto-generated method stub
+		ListNode<T> current = header.next;
+		ListNode<T> previous = header;
+		
+		if( current == null )
+		{
+			return false;
+		}
+		while ( current != null )
+		{
+		    if( element.equals(current.data) )
+			{
+			   previous.next = current.next;
+			   size--;
+			   if( tail == current )
+				   tail = previous;
+			   return true;
+			}
+		    previous = current;
+		    current = current.next;
+		}
+		
 		return false;
 	}
 
