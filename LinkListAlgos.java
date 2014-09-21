@@ -11,9 +11,9 @@ public LinkListAlgos<T> extends LinkedList<T>
     
     while( current )
     {
-      flag != flag;
+      flag = ~flag;
       
-      current=current.next;
+      current= current.next;
     }
 
     if( flag == 0)
